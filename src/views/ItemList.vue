@@ -125,7 +125,7 @@ export default {
   position absolute
   margin 30px 0
   width 100%
-  transition all .5s cubic-bezier(.55,0,.1,1)
+  transition all .2s cubic-bezier(.55,0,.1,1)
   ul
     list-style-type none
     padding 0

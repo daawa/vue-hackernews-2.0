@@ -96,7 +96,7 @@ a
   position relative
 
 .fade-enter-active, .fade-leave-active
-  transition all .2s ease
+  transition all .1s ease
 
 .fade-enter, .fade-leave-active
   opacity 0
