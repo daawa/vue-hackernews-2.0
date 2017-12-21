@@ -28,8 +28,19 @@
 //
 //      }
       created:function () {
-          //this.$router.push({path:"/top"})
-          this.$router.replace({path:"/top"})
+          console.log("current path:" + this.$route.path);
+
+          let matched = this.$router.getMatchedComponents(this.$route.path);
+
+          if((matched.length <= 0)){
+              console.log("redirect from " + this.$route.path + " to /top");
+              this.$router.replace({path:"/top"})
+
+          } else {
+              console.log("options:" + matched[0].toString());
+          }
+
+
 
       }
   }
